@@ -104,3 +104,127 @@
 # print("\nnumber of fruits")
 # print(len(fruits))
 
+#______________________________________tuple concept__________________________________________________
+
+# a=(1,2,3) 
+# print(a)
+# print(a[0:2])
+# print(type(a))
+
+# tuple methods
+
+#1:__________________________________return index of first occurance___________________________________
+
+# tup=(1,2,3,4)
+# print(tup.index(4))
+
+#2:___________________________________counts total occurrance___________________________________________
+
+# tup=(1,4,2,3,4)
+# print(tup.count(4))
+
+#                               Q:1>>> wap to ask the user to enter names of their fav movies and store them in list
+
+# m1=(input("movie one name:"))
+# m2=(input("movie two name:"))
+# m3=(input("movie three name:"))
+
+# list=[m1,m2,m3]
+# print(list)
+
+#                                   :2>>>wap if a list contain a palindrome of element.......use of copy mathod
+
+# list=[1,2,3,4,3,2,1]
+
+# copy_list=list.copy()
+# copy_list.reverse()
+
+# if(copy_list==list):
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+#                                        Q:3>>>wap to count the number of students with the "A" grade in the following tuple
+
+# tup=("C","D","A","A","B","B","A")
+# print(tup.count("A"))
+
+#                                               Q:4>>>WAP to store the values in a list and sort them
+
+# list=["C","D","A","A","B","B","A"]
+# list.sort()
+# print(list)
+
+#                                                   Dicitonary concepts
+
+# dict={
+#     "name":"muhammad Talha",
+#      "cgpa": 12.3,
+#      "marks":[12,14,81],
+# }
+
+# print(dict)
+# print(dict["marks"])
+
+#                                                   Dictionary Methods
+
+# 1:>>>                                               return all keys
+
+# student={
+#     "name":"muhammad talha",
+#     "subject":{
+#         "physics":75,
+#         "chem":95,
+#         "bio":83,
+#     }
+# }
+
+# print(student.keys())
+# # other concept
+# print(list(student.keys()))
+# print(len(list(student.keys())))
+
+# 2:>>>                                         return alla values
+
+# student={
+#     "name":"muhammad talha",
+#     "subject":{
+#         "physics":75,
+#         "chem":95,
+#         "bio":83,
+#     }
+# }
+
+# print(student.values())
+
+# 3:>>>>                        out put in pairs form or in tuple form
+
+
+# student={
+#     "name":"muhammad talha",
+#     "subject":{
+#         "physics":75,
+#         "chem":95,
+#         "bio":83,
+#     }
+# }
+
+# pairs=(list(student.items()))
+# print(pairs[0])
+
+
+# 4:>>>>                            return key according to the value
+
+
+# student={
+#     "name":"muhammad talha",
+#     "subject":{
+#         "physics":75,
+#         "chem":95,
+#         "bio":83,
+#     }
+# }
+# # error
+#  print(student["name2"])
+# # no error->thy give out (none)
+# print(student.get("name2"))
